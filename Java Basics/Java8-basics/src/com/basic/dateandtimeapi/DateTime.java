@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Month;
+import java.time.ZoneId;
 
 public class DateTime {
 
@@ -21,8 +22,10 @@ public class DateTime {
 		LocalDate rightNow1 = LocalDate.of(2022, Month.AUGUST, 15);
 		System.out.println("Specific Date: "+rightNow1);
 		
-		LocalTime t1 = LocalTime.now();
+		LocalTime t1 = LocalTime.now(ZoneId.of("CET"));
 		System.out.println("Local Time: "+t1);
+		
+//		LocalDate birthDay = LocalDate.now().withDayOfMonth(dayOfMonth)
 		
 
 	}
