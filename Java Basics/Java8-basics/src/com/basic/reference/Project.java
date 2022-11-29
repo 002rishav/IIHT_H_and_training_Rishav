@@ -32,7 +32,7 @@ public class Project {
 				System.out.println(i);
 			}
 			try {
-				Thread.sleep(1000);
+				Thread.sleep(10);
 			}catch(InterruptedException e) {
 				e.printStackTrace();
 			}
