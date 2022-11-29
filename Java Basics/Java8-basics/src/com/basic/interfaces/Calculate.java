@@ -13,6 +13,7 @@ public class Calculate {
 		System.out.println(Square.sq(10));
 		
 	}
+	
 }
 
 class SquareOf10 implements Square{
