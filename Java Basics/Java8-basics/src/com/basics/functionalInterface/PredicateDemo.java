@@ -1,5 +1,7 @@
 package com.basics.functionalInterface;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.function.Predicate;
 
 public class PredicateDemo /*implements Predicate<Integer>*/ {
@@ -9,6 +11,11 @@ public class PredicateDemo /*implements Predicate<Integer>*/ {
 		//Predicate<Integer> predicate=new PredicateDemo();
 		Predicate<Integer> predicate=(t)->(t%2==0);
 		System.out.println(predicate.test(6));
+		
+		List<Integer> numberList = Arrays.asList(1,2,3,4,5);
+		
+		
+		numberList.stream().filter(predicate).forEach(number->System.out.println("printing:" + number));
 	}
 
 //	@Override
