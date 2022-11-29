@@ -1,4 +1,4 @@
-package com.basics.functionalInterface;
+package com.basic.functionalInterface;
 
 import java.util.function.Supplier;
 
