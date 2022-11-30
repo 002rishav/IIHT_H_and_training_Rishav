@@ -92,3 +92,27 @@ class TodaysDate extends Date{
 }
 let today=new TodaysDate();
 today.print();
+
+class AppleLaptops {
+    //parent class
+    constructor(brand, model, processor,ram) {
+        this.brand = "Apple";        
+    }
+}
+
+class MacBookPro extends AppleLaptops {
+    constructor(model, processor,ram) {
+        super();// used to fetch the content of the constructor from parent class
+        this.model = model;
+        this.processor = processor;
+        this.ram=ram;
+    }
+}
+
+let l1=new MacBookPro("2021 15` MacBook Pro","i7","16GB");
+console.log(l1.brand+" "+l1.model+" "+l1.processor+" "+l1.ram);
+
+let fruits=["Apple","Banana","Pineapple"]
+let seasonalfruits=["Mango","Litchi"]
+let allFruits=[...fruits,...seasonalfruits] //... is a spread operator which is used to get the values of other arrays into current array
+console.log(allFruits);
