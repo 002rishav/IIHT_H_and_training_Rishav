@@ -155,5 +155,21 @@ function addNumbers1(){
 addNumbers1();
 //console.log(num2);
 
+//abstarction
+function dogs(){
+    this.dogname="Lab";
+    throw new error("This is not a wild dog.");
+}
+
+dogs.prototype.display= function(){
+    return "this dogs breed is: "+this.dogname;
+}
+
+function Animal(dogname){
+    this.dogname=dogname;
+}
+Animal.prototype = Object.create(dogs.prototype);
+let tommy = new Animal("German Shepherd");
+console.log(tommy.display())
 
 
