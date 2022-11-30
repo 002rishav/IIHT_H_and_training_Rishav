@@ -15,8 +15,19 @@
         var age=24;  //define a variable
         var isGraduate=true;
         var laptop;
+        laptop='lg';
         console.log(name);
         console.log(age);
+
+        function alertUser(){
+
+            var favChips = 'Lays' //This variable is created and destroyed inside the function hence it is not accessible outside the method
+            
+            alert("This user has logged in " +name)
+
+        }
+        alertUser();
+        console.log(favChips);
 
 
     </Script>
