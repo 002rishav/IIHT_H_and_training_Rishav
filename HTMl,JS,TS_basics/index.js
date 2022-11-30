@@ -116,3 +116,44 @@ let fruits=["Apple","Banana","Pineapple"]
 let seasonalfruits=["Mango","Litchi"]
 let allFruits=[...fruits,...seasonalfruits] //... is a spread operator which is used to get the values of other arrays into current array
 console.log(allFruits);
+
+// a concept of arrow function was introduced
+// function counting() {
+//     for (let i = 1; i < 10; i++) {
+//         console.log(i);
+//     }
+// }
+//conventional method
+
+let counting = ()=>{
+    for (let i = 1; i < 10; i++) {
+        console.log(i);
+    }
+}
+counting();
+
+//var can be re-declared
+var num1=1000;
+var num1=2000;
+console.log(num1);
+
+//let keyword - > was announced with es6, it has a block scope, a variable declared using let cannot be re-defined
+let a=100;
+function addNumbers(){
+    a=230;
+    let b=100;
+    console.log(a+b);
+}
+addNumbers();
+console.log(a+1000);
+
+function addNumbers1(){
+    const num2=230;
+    //const num2=900;
+    console.log(num2);
+}
+addNumbers1();
+//console.log(num2);
+
+
+
