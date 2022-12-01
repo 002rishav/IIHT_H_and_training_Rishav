@@ -172,4 +172,8 @@ Animal.prototype = Object.create(dogs.prototype);
 let tommy = new Animal("German Shepherd");
 console.log(tommy.display())
 
+function Greet(){
+    alert("Welcome Fellow Developer");
+}
+
 
