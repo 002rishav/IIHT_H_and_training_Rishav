@@ -25,7 +25,7 @@
         <input style="margin-bottom: 5px; margin-left:2px; margin-top:5px;" type="text" id="state" placeholder="Enter your state"/>
         <br/>
         <label for="pincode">ZIP/Postal Code:</label>
-        <input style="margin-bottom: 5px; margin-left:2px; margin-top:5px;" type="text" id="pincode" placeholder="Enter your zip here"/>
+        <input style="margin-bottom: 5px; margin-left:2px; margin-top:5px;" type="number" id="pincode" placeholder="Enter your zip here"/>
         <br/>
         <label for="country">Select your Country:</label>
         <select name="country" id="country">
@@ -36,8 +36,8 @@
         <br/>
         <label for="phone">Enter Your Country Code and your Phone Number:</label>
         <br/>
-        <input style="margin-bottom: 5px; margin-left:2px; margin-top:5px;" type="text" id="code" placeholder="country code"/>
-        <input style="margin-bottom: 5px; margin-left:2px; margin-top:5px;" type="text" id="phone" placeholder="phone number"/>
+        <input style="margin-bottom: 5px; margin-left:2px; margin-top:5px;" type="number" id="code" placeholder="country code"/>
+        <input style="margin-bottom: 5px; margin-left:2px; margin-top:5px;" type="number" id="phone" placeholder="phone number"/>
         <br/>
         <label for="email">Enter your Email:</label>
         <input style="margin-bottom: 5px; margin-left:2px; margin-top:5px;" type="text" id="email" placeholder="Enter your email"/>
@@ -47,8 +47,9 @@
         <input style="margin-left:10px;" type="radio" value="Male" name="gender" id="gender">Male
         <input style="margin-left:10px;" type="radio" value="Female" name="gender" id="gender">Female
         <br/>
-        <button onclick="Greet()" type="submit">Submit</button>
-        <button onclick="Greet()" type="submit">Reset</button>
+        <input type="submit"/>
+        <input type="reset"/>
+        
     </div>
 </body>
 </html>
