@@ -6,7 +6,7 @@ function Car(color, model,cost,fuelType){
     let runningCostPerYear= 30000;
 
     this.getCarDetails = function() {
-        console.log("Color: "+this.color);
+        console.log("Color: "+color);
         console.log("Model: "+this.model);
         console.log("Cost: "+this.cost);
         console.log("fuelType: "+this.fuelType);
@@ -21,4 +21,5 @@ function Car(color, model,cost,fuelType){
 let MercedesCclass = new Car("Red","C class",5000000,"Petrol");
 MercedesCclass.getCarDetails();
 MercedesCclass.runningCostPerYear=90000;
+//MercedesCclass.getCarDetails();
 console.log(MercedesCclass.totalCostOfOwnership());
