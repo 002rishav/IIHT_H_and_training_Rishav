@@ -6,7 +6,7 @@ public class CourseData {
 	
 	public static List<Courses> getAllCourses(){
 
-        //
+        //Entering details to the Course list
 		Courses course1 = new Courses("1","JEE_Mains",80000.00,2,"Suman");
 		Courses course2 = new Courses("2","JEE_Advanced",180000.00,2,"Joseph");
         //
@@ -29,7 +29,7 @@ public class CourseData {
 		Courses course14 = new Courses("14","Railways",300000.00,4,"Sethupathi");
 		Courses course15 = new Courses("15","GATE",80000.00,2,"Sourav");
 		
-		//
+		//entering the course details to the array named courses
         List<Courses> courses = Arrays.asList(course1,course2,course3,course4,course5,course6,course7,course8,course9,course10,course11,course12,course13,course14,course15);
         return courses;
     }

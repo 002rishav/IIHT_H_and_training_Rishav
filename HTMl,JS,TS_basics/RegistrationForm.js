@@ -1,3 +1,4 @@
+// function for onclick of button to show the details on the console
 function display(){
     let name=document.getElementById("fullname").value;
     console.log("Name: "+name);
@@ -24,5 +25,6 @@ function display(){
     let expiry_date=document.getElementById("expiry_date").value;
     console.log("Expiry Date: "+expiry_date);
 
+    // redirecting to the thank you page on click of next button
     location.href="thanks.html";
 }

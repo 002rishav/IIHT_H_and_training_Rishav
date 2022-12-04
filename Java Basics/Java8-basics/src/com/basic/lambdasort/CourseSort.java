@@ -6,14 +6,16 @@ import java.util.List;
 
 public class CourseSort {
 
-static List<Courses> courseList = CourseData.getAllCourses();
+	static List<Courses> courseList = CourseData.getAllCourses();
 	
+	//method for finding the ascending order list of courses using fees
 	public static List<Courses> printDetailsUsingFeesAscending(){
         System.out.println("printDetails Using FeesAscendingOrcer : ");
         courseList.sort(Comparator.comparing(c -> c.getTotal_fees()));
 		return courseList;
     }
 	
+	//method for finding the descending order list of courses using fees
 	public static List<Courses> printDetailsUsingFeesDescending(){
         System.out.println("\nprintDetails Using FeesDescendingOrder : ");
         courseList.sort(Comparator.comparing(c -> c.getTotal_fees()));
@@ -21,6 +23,7 @@ static List<Courses> courseList = CourseData.getAllCourses();
         return courseList;
     }
 	
+	//method for finding the ascending order list of courses using duration
 	public static List<Courses> printDetailsUsingDurationCondition(){
         System.out.println("\nprintDetails Using DurationCondition : ");
         courseList.sort(Comparator.comparing(c -> c.getCourse_duration()));

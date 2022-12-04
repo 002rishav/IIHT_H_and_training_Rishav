@@ -8,20 +8,24 @@
     <script src="RegistrationForm.js"></script>
 </head>
 <body bgcolor="#3F69E0">
+    <!-- div for registration form -->
     <div style="border: 2px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color:whitesmoke; margin-left:200px; margin-right:200px; margin-top:60px;" >
         <label style="font-size: 35px; margin-left:40px"><u style="text-decoration-color:green">Re</u>gistration</label>
+        <!-- div for personal details -->
         <div style="margin-top: 10px;">
             <label style="font-size: 25px; margin-left:40px; color:#888A8F;">Personal Details</label>
+            <!-- different fields for entering the personal data -->
             <div style="margin-top: 5px;">
                 <label for="fullname" style="font-size: 20px; margin-left:40px;">Full Name</label>
-                <label for="dob" style="font-size: 20px; margin-left:260px;">Date of Birth</label>
-                <label for="email" style="font-size: 20px; margin-left:240px;">Email</label>
+                <label for="dob" style="font-size: 20px; margin-left:257px;">Date of Birth</label>
+                <label for="email" style="font-size: 20px; margin-left:238px;">Email</label>
                 <br/>
                 <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="fullname" placeholder="Enter your name"/>
                 <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="dob" placeholder="Enter your birth date"/>
                 <input style="margin-bottom: 5px; margin-left:40px; margin-right:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="email" placeholder="Enter your email"/>
                 <br/>
             </div>
+            
             <div style="margin-top: 5px;">
                 <label for="mobile" style="font-size: 20px; margin-left:40px;">Mobile number</label>
                 <label for="gender" style="font-size: 20px; margin-left:210px;">Gender</label>
@@ -33,8 +37,10 @@
                 <br/>
             </div>
         </div>
+        <!-- div for identity details -->
         <div style="margin-top: 10px;">
             <label style="font-size: 25px; margin-left:40px; color:#888A8F;">Identity Details</label>
+            <!-- different fields for entering the identity data -->
             <div style="margin-top: 5px;">
                 <label for="id_type" style="font-size: 20px; margin-left:40px;">ID Type</label>
                 <label for="id_num" style="font-size: 20px; margin-left:280px;">ID Number</label>
@@ -45,6 +51,7 @@
                 <input style="margin-bottom: 5px; margin-left:40px; margin-right:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="issue_auth" placeholder="Enter issue department"/>
                 <br/>
             </div>
+            
             <div style="margin-top: 5px;">
                 <label for="issue_date" style="font-size: 20px; margin-left:40px;">Issue Date</label>
                 <label for="issue_state" style="font-size: 20px; margin-left:255px;">Issue State</label>
@@ -55,7 +62,9 @@
                 <input style="margin-bottom: 5px; margin-left:40px; margin-right:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="expiry_date" placeholder="Enter ID expiry date"/>
                 <br/>
             </div>
+        
         </div>
+        <!-- button for submitting the form and showing the data on console -->
         <button style="margin-left:40px; margin-top:10px; margin-bottom: 15px; height:30px;width:200px; background-color: #3F69E0; color:whitesmoke;" onclick="display()">Next --></button>
     </div>
     

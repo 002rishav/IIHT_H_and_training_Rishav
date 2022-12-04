@@ -1,12 +1,14 @@
 package com.basic.lambdasort;
 
 public class Courses {
+	//declaring the attributes of course list
 	private String course_id;
 	private String course_name;
     private double total_fees;
     private int course_duration;
     private String course_teacher;
     
+    //constructor for Courses
 	public Courses(String course_id, String course_name, double total_fees, int course_duration,
 			String course_teacher) {
 		super();
@@ -17,6 +19,7 @@ public class Courses {
 		this.course_teacher = course_teacher;
 	}
 
+	//getter and setter methods
 	public String getCourse_id() {
 		return course_id;
 	}
@@ -57,6 +60,7 @@ public class Courses {
 		this.course_teacher = course_teacher;
 	}
 
+	//toString
 	@Override
 	public String toString() {
 		return "Courses [course_id=" + course_id + ", course_name=" + course_name + ", total_fees=" + total_fees
