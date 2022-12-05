@@ -14,7 +14,7 @@
     <div style="border: 2px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color:whitesmoke; margin-left:200px; margin-right:200px; margin-top:60px;" >
         <label style="font-size: 35px; margin-left:40px"><u style="text-decoration-color:green">Re</u>gistration</label>
         <!-- div for personal details -->
-        <form >
+        <form action="thanks.html" id="reg_form">
         <div style="margin-top: 10px;">
             <label style="font-size: 25px; margin-left:40px; color:#888A8F;">Personal Details</label>
             <!-- different fields for entering the personal data -->
@@ -24,8 +24,8 @@
                 <label for="email" style="font-size: 20px; margin-left:238px;">Email</label>
                 <br/>
                 <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="fullname" required placeholder="Enter your name"/>
-                <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="dob" placeholder="Enter your birth date"/>
-                <input style="margin-bottom: 5px; margin-left:40px; margin-right:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="email" placeholder="Enter your email"/>
+                <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="dob" required placeholder="Enter your birth date"/>
+                <input style="margin-bottom: 5px; margin-left:40px; margin-right:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="email"required placeholder="Enter your email"/>
                 <br/>
             </div>
             
@@ -34,9 +34,9 @@
                 <label for="gender" style="font-size: 20px; margin-left:210px;">Gender</label>
                 <label for="occupation" style="font-size: 20px; margin-left:285px;">Occupation</label>
                 <br/>
-                <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="mobile" placeholder="Enter your mobile number"/>
-                <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="gender" placeholder="Enter your gender"/>
-                <input style="margin-bottom: 5px; margin-left:40px; margin-right:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="occupation" placeholder="Enter your occupation"/>
+                <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="mobile" required placeholder="Enter your mobile number"/>
+                <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="gender" required placeholder="Enter your gender"/>
+                <input style="margin-bottom: 5px; margin-left:40px; margin-right:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="occupation" required placeholder="Enter your occupation"/>
                 <br/>
             </div>
         </div>
@@ -49,9 +49,9 @@
                 <label for="id_num" style="font-size: 20px; margin-left:280px;">ID Number</label>
                 <label for="issue_auth" style="font-size: 20px; margin-left:250px;">Issue Authority</label>
                 <br/>
-                <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="id_type" placeholder="Enter ID type"/>
-                <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="id_num" placeholder="Enter ID number"/>
-                <input style="margin-bottom: 5px; margin-left:40px; margin-right:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="issue_auth" placeholder="Enter issue department"/>
+                <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="id_type" required placeholder="Enter ID type"/>
+                <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="id_num" required placeholder="Enter ID number"/>
+                <input style="margin-bottom: 5px; margin-left:40px; margin-right:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="issue_auth" required placeholder="Enter issue department"/>
                 <br/>
             </div>
             
@@ -60,15 +60,15 @@
                 <label for="issue_state" style="font-size: 20px; margin-left:255px;">Issue State</label>
                 <label for="expiry_date" style="font-size: 20px; margin-left:255px;">Expiry Date</label>
                 <br/>
-                <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="issue_date" placeholder="Enter ID issue date"/>
-                <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="issue_state" placeholder="Enter ID issue state"/>
-                <input style="margin-bottom: 5px; margin-left:40px; margin-right:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="expiry_date" placeholder="Enter ID expiry date"/>
+                <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="issue_date" required placeholder="Enter ID issue date"/>
+                <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="issue_state" required placeholder="Enter ID issue state"/>
+                <input style="margin-bottom: 5px; margin-left:40px; margin-right:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="expiry_date" required placeholder="Enter ID expiry date"/>
                 <br/>
             </div>
         
         </div>
         <!-- button for submitting the form and showing the data on console -->
-        <button style="margin-left:40px; margin-top:10px; margin-bottom: 15px; height:30px;width:200px; background-color: #3F69E0; color:whitesmoke;" onclick="display()"><span align="center" style="font-size:15px">Next</span><i><iconify-icon icon="ic:baseline-arrow-right-alt" style="margin-top:6px;height:auto;"></iconify-icon></i></button>
+        <button style="margin-left:40px; margin-top:10px; margin-bottom: 15px; height:30px;width:200px; background-color: #3F69E0; color:whitesmoke;" onclick="display()" >Next &#8594</button>
     </form>
     </div>
     

@@ -6,7 +6,7 @@ public class CourseData {
 	
 	public static List<Courses> getAllCourses(){
 
-        //Entering details to the Course list
+        //Creating object for each course to be entered to the list
 		Courses course1 = new Courses("1","JEE_Mains",80000.00,2,"Suman");
 		Courses course2 = new Courses("2","JEE_Advanced",180000.00,2,"Joseph");
         //
