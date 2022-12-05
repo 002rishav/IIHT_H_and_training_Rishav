@@ -63,9 +63,9 @@ public class Courses {
 	//toString
 	@Override
 	public String toString() {
-		return "Courses [course_id=" + course_id + ", course_name=" + course_name + ", total_fees=" + total_fees
+		return "\n"+"[course_id=" + course_id + ", course_name=" + course_name + ", total_fees=" + total_fees
 				+ ", course_duration=" + course_duration + ", course_teacher=" + course_teacher + "]";
 	}
-	
+
 
 }
