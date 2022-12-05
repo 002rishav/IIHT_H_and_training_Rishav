@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <script src="RegistrationForm.js"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </head>
-<body bgcolor="#3F69E0">
+<body bgcolor="#3F69E0" class="container">
     <!-- div for registration form -->
     <div style="border: 2px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color:whitesmoke; margin-left:200px; margin-right:200px; margin-top:60px;" >
         <label style="font-size: 35px; margin-left:40px"><u style="text-decoration-color:green">Re</u>gistration</label>
         <!-- div for personal details -->
+        <form >
         <div style="margin-top: 10px;">
             <label style="font-size: 25px; margin-left:40px; color:#888A8F;">Personal Details</label>
             <!-- different fields for entering the personal data -->
@@ -20,7 +23,7 @@
                 <label for="dob" style="font-size: 20px; margin-left:257px;">Date of Birth</label>
                 <label for="email" style="font-size: 20px; margin-left:238px;">Email</label>
                 <br/>
-                <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="fullname" placeholder="Enter your name"/>
+                <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="fullname" required placeholder="Enter your name"/>
                 <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="dob" placeholder="Enter your birth date"/>
                 <input style="margin-bottom: 5px; margin-left:40px; margin-right:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="email" placeholder="Enter your email"/>
                 <br/>
@@ -65,7 +68,8 @@
         
         </div>
         <!-- button for submitting the form and showing the data on console -->
-        <button style="margin-left:40px; margin-top:10px; margin-bottom: 15px; height:30px;width:200px; background-color: #3F69E0; color:whitesmoke;" onclick="display()">Next --></button>
+        <button style="margin-left:40px; margin-top:10px; margin-bottom: 15px; height:30px;width:200px; background-color: #3F69E0; color:whitesmoke;" onclick="display()"><span align="center" style="font-size:15px">Next</span><i><iconify-icon icon="ic:baseline-arrow-right-alt" style="margin-top:6px;height:auto;"></iconify-icon></i></button>
+    </form>
     </div>
     
 </body>
