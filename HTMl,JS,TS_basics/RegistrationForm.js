@@ -28,3 +28,4 @@ function display(){
     // redirecting to the thank you page on click of next button
     location.href="thanks.html";
 }
+
