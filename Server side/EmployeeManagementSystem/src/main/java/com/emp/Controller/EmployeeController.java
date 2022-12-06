@@ -13,10 +13,10 @@ public class EmployeeController {
 
 	@Autowired
 	private IEmployeeService employeeService;
-	
+
 	@PostMapping("/add")
-	Integer createEmployee(@RequestBody Employee employee){
-		Integer id=employeeService.saveEmployee(employee);
+	Integer createEmployee(@RequestBody Employee employee) {
+		Integer id = employeeService.saveEmployee(employee);
 		System.out.println(id);
 		return id;
 	}

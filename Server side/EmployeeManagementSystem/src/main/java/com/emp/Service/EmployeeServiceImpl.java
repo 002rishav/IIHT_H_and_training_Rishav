@@ -7,14 +7,13 @@ import com.emp.Entity.Employee;
 import com.emp.Repo.IEmployeeRepo;
 
 @Service
-public class EmployeeServiceImpl implements IEmployeeService{
-	
+public class EmployeeServiceImpl implements IEmployeeService {
+
 	@Autowired
 	private IEmployeeRepo employeeRepo;
-	
-	
+
 	public Integer saveEmployee(Employee employee) {
-		Employee savedEmployee=employeeRepo.save(employee);
+		Employee savedEmployee = employeeRepo.save(employee);
 		return savedEmployee.getId();
 	}
 
