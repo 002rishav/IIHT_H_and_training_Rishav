@@ -7,5 +7,4 @@ import com.emp.Entity.Employee;
 
 @Repository
 public interface IEmployeeRepo extends JpaRepository<Employee, Integer> {
-
 }
