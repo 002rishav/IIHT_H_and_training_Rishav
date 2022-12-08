@@ -8,11 +8,11 @@
 		<version>2.7.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.hr</groupId>
-	<artifactId>HR-service</artifactId>
+	<groupId>com.resource</groupId>
+	<artifactId>Resource-Service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>HR-service</name>
-	<description>this is HR microservice for our microservice application</description>
+	<name>Resource-Service</name>
+	<description>Demo spring boot project, learn microservice</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
