@@ -1,7 +1,6 @@
 package com.library.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 import com.library.Entity.Library;
 
@@ -11,7 +10,7 @@ public interface ILibraryService {
 	
 	public List<Library> getAllBooks();
 	
-	Optional<Library> getBook(Integer id);
+	Library getBook(Integer id);
 	
 	public void deleteBook(Integer id);
 	

@@ -1,7 +1,6 @@
 package com.library.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,8 +28,9 @@ public class LibraryServiceImpl implements ILibraryService {
 	}
 
 	@Override
-	public Optional<Library> getBook(Integer id) {
-		return libraryRepo.findById(id);
+	public Library getBook(Integer id) {
+		return libraryRepo.findById(id)
+				.orElseThrow(() -> new ResourceNotFoundExceptionHandler("Book", "id", id));
 	}
 
 	@Override
@@ -41,7 +41,7 @@ public class LibraryServiceImpl implements ILibraryService {
 
 	@Override
 	public Library updateBook(Library library, Integer id) {
-		// lets check if the employee exists with the given value or not
+		// lets check if the book exists with the given value or not
 		Library existingBook = libraryRepo.findById(id)
 				.orElseThrow(() -> new ResourceNotFoundExceptionHandler("Book", "id", id));
 
@@ -56,7 +56,7 @@ public class LibraryServiceImpl implements ILibraryService {
 	
 	@Override
 	public Library updateBorrowedStatus(Library library, Integer id) {
-		// lets check if the employee exists with the given value or not
+		// lets check if the book exists with the given value or not
 		Library existingBook = libraryRepo.findById(id)
 				.orElseThrow(() -> new ResourceNotFoundExceptionHandler("Book", "id", id));
 

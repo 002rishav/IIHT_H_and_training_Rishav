@@ -1,7 +1,6 @@
 package com.library.Controller;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -36,8 +35,8 @@ public class LibraryController {
 	}
 	
 	@GetMapping("/read/{id}")
-	public Optional<Library> getBookbyId(@PathVariable Integer id){
-		Optional<Library> library=libraryService.getBook(id);
+	public Library getBookbyId(@PathVariable Integer id){
+		Library library=libraryService.getBook(id);
 		return library;
 	}
 	
