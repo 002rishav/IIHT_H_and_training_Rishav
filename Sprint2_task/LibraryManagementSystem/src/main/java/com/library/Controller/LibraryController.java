@@ -54,7 +54,7 @@ public class LibraryController {
 	}
 	
 	@PutMapping("/update/{id}")
-	public ResponseEntity<Library> updateEmployee(@PathVariable("id") Integer id,@RequestBody Library library){
+	public ResponseEntity<Library> updateBook(@PathVariable("id") Integer id,@RequestBody Library library){
 		return new ResponseEntity<Library>(libraryService.updateBook(library, id),HttpStatus.OK);
 	}
 	

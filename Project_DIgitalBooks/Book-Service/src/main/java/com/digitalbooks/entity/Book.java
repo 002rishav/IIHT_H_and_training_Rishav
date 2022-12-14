@@ -1,135 +1,54 @@
 package com.digitalbooks.entity;
 
-import java.util.Date;
+import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
+@Table(name = "books" , uniqueConstraints = @UniqueConstraint(columnNames = "book_id"))
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Book {
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Integer id;
-	private String logo;
-	private String title;
-	private String category;
-	private String price;
-	private Integer authorID;
-	private String author;
-	private String publisher;
-	private Date published_date;
-	private String chapters;
-	private boolean active;
-	
-	public Book() {
-		super();
-	}
 
-	public Book(Integer id, String logo, String title, String category, String price, Integer authorID, String author,
-			String publisher, Date published_date, String chapters, boolean active) {
-		super();
-		this.id = id;
-		this.logo = logo;
-		this.title = title;
-		this.category = category;
-		this.price = price;
-		this.authorID = authorID;
-		this.author = author;
-		this.publisher = publisher;
-		this.published_date = published_date;
-		this.chapters = chapters;
-		this.active = active;
-	}
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id ;
 
-	public Integer getId() {
-		return id;
-	}
+    @Column(name = "book_id" , nullable = false)
+    private String bookId ;
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    @Column(name = "author_id")
+    private String authorId ;
 
-	public String getLogo() {
-		return logo;
-	}
+    @Column(name = "author")
+    private String author ;
 
-	public void setLogo(String logo) {
-		this.logo = logo;
-	}
+    @Column(name = "logo")
+    private String logo ;
 
-	public String getTitle() {
-		return title;
-	}
+    @Column(name = "title")
+    private String title ;
 
-	public void setTitle(String title) {
-		this.title = title;
-	}
+    @Column(name = "category")
+    private String category ;
 
-	public String getCategory() {
-		return category;
-	}
+    @Column(name = "price")
+    private int price ;
 
-	public void setCategory(String category) {
-		this.category = category;
-	}
+    @Column(name = "publisher")
+    private String publisher ;
 
-	public String getPrice() {
-		return price;
-	}
+    @Column(name = "published_date")
+    private LocalDateTime publishedDate ;
 
-	public void setPrice(String price) {
-		this.price = price;
-	}
+    @Column(name = "content")
+    private String content ;
 
-	public String getAuthor() {
-		return author;
-	}
-
-	public void setAuthor(String author) {
-		this.author = author;
-	}
-
-	public String getPublisher() {
-		return publisher;
-	}
-
-	public void setPublisher(String publisher) {
-		this.publisher = publisher;
-	}
-
-	public Date getPublished_date() {
-		return published_date;
-	}
-
-	public void setPublished_date(Date published_date) {
-		this.published_date = published_date;
-	}
-
-	public String getChapters() {
-		return chapters;
-	}
-
-	public void setChapters(String chapters) {
-		this.chapters = chapters;
-	}
-
-	public boolean isActive() {
-		return active;
-	}
-
-	public void setActive(boolean active) {
-		this.active = active;
-	}
-
-	public Integer getAuthorID() {
-		return authorID;
-	}
-
-	public void setAuthorID(Integer authorID) {
-		this.authorID = authorID;
-	}
+    @Column(name = "active")
+    private boolean active ;
 
 }

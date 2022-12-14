@@ -24,18 +24,23 @@
                 <label for="email" style="font-size: 20px; margin-left:238px;">Email</label>
                 <br/>
                 <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="fullname" required placeholder="Enter your name"/>
-                <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="dob" required placeholder="Enter your birth date"/>
+                <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="date" id="dob" required placeholder="Enter your birth date"/>
                 <input style="margin-bottom: 5px; margin-left:40px; margin-right:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="email"required placeholder="Enter your email"/>
                 <br/>
             </div>
             
             <div style="margin-top: 5px;">
                 <label for="mobile" style="font-size: 20px; margin-left:40px;">Mobile number</label>
-                <label for="gender" style="font-size: 20px; margin-left:210px;">Gender</label>
+                <label for="gender" style="font-size: 20px; margin-left:210px;" for="gender">Gender</label>
                 <label for="occupation" style="font-size: 20px; margin-left:285px;">Occupation</label>
                 <br/>
                 <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="mobile" required placeholder="Enter your mobile number"/>
-                <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="gender" required placeholder="Enter your gender"/>
+                <select style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="checkbox" id="gender" required name="gender">
+                    <option value="select gender" selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select>
                 <input style="margin-bottom: 5px; margin-left:40px; margin-right:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="occupation" required placeholder="Enter your occupation"/>
                 <br/>
             </div>
@@ -60,9 +65,9 @@
                 <label for="issue_state" style="font-size: 20px; margin-left:255px;">Issue State</label>
                 <label for="expiry_date" style="font-size: 20px; margin-left:255px;">Expiry Date</label>
                 <br/>
-                <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="issue_date" required placeholder="Enter ID issue date"/>
+                <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="date" id="issue_date" required placeholder="Enter ID issue date"/>
                 <input style="margin-bottom: 5px; margin-left:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="issue_state" required placeholder="Enter ID issue state"/>
-                <input style="margin-bottom: 5px; margin-left:40px; margin-right:40px; margin-top:5px; width: 300px; height: 30px;" type="text" id="expiry_date" required placeholder="Enter ID expiry date"/>
+                <input style="margin-bottom: 5px; margin-left:40px; margin-right:40px; margin-top:5px; width: 300px; height: 30px;" type="date" id="expiry_date" required placeholder="Enter ID expiry date"/>
                 <br/>
             </div>
         
