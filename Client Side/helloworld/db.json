@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "firstanme": "Rishav",
+      "lastname": "Roy",
+      "age": 24,
+      "email": "rishav@gmail.com",
+      "id": 1
+    },
+    {
+      "firstanme": "Parnava",
+      "lastname": "Kundu",
+      "age": 24,
+      "email": "parnava@gmail.com",
+      "id": 2
+    }
+  ]
+}
