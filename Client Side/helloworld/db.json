@@ -13,6 +13,14 @@
       "age": 24,
       "email": "parnava@gmail.com",
       "id": 2
+    },
+    {
+      "firstName": "Kumar",
+      "lastName": "Rahul",
+      "age": "23",
+      "gender": "male",
+      "email": "rahul@gmail.com",
+      "id": 3
     }
   ]
 }
