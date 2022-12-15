@@ -21,12 +21,11 @@ export class UserformComponent implements OnInit {
       }, function(error){
         console.log(error);
         alert("something went wrong, Please try again!")
-      })
+      })}
+      //earlier save method
     // console.log("Hello " + this.user.firstName + ' ' + this.user.lastName);
     // console.log('your email id is ' + this.user.email);
     // console.log('your age is ' + this.user.age + ' and gender is ' + this.user.gender);
-  }
-
 
   constructor(private userService: UserService) { }
 
