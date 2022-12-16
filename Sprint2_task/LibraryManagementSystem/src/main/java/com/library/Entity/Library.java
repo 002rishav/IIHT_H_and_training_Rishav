@@ -13,11 +13,11 @@ public class Library {
 	private Integer id;
 	private String book_name;
 	private String book_author;
-	private Float book_price;
+	private Double book_price;
 	private String book_genre;
 	private Boolean borrowed_status;
 	
-	public Library(Integer id, String book_name, String book_author, Float book_price, String book_genre,
+	public Library(Integer id, String book_name, String book_author, Double book_price, String book_genre,
 			Boolean borrowed_status) {
 		super();
 		this.id = id;
@@ -56,11 +56,11 @@ public class Library {
 		this.book_author = book_author;
 	}
 
-	public Float getBook_price() {
+	public Double getBook_price() {
 		return book_price;
 	}
 
-	public void setBook_price(Float book_price) {
+	public void setBook_price(Double book_price) {
 		this.book_price = book_price;
 	}
 
