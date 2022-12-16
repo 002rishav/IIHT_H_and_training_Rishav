@@ -13,6 +13,14 @@ export class RegUsersComponent implements OnInit {
 
   constructor(private userService : UserService) { }
 
+  deleteRow(user,index){
+    const observables = this.userService.deleteUsers(user);
+    observables.subscribe((response:any) => {
+      console.log(response);
+      this.users.splice(index,1);
+    });
+  }
+
   ngOnInit(): void {
     const promise = this.userService.getUsers();
     promise.subscribe((response) => {
