@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import User from 'src/app/Entity/user';
+import { UserService } from 'src/app/Services/user.service';
 
 @Component({
   selector: 'app-reg-users',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegUsersComponent implements OnInit {
 
-  constructor() { }
+  users :User[] = [];
+
+  constructor(private userService : UserService) { }
 
   ngOnInit(): void {
+    const promise = this.userService.getUsers();
+    promise.subscribe((response) => {
+      console.log(response);
+      this.users = response as User[];
+    });
   }
 
 }
