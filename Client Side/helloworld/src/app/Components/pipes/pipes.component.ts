@@ -16,7 +16,16 @@ export class PipesComponent implements OnInit {
     "WinningPercentage" : 35/100
   }
 
+  param:string = "";
+
   constructor() { }
+
+  // show(){
+  //   if(this.employee.About.length == 30){
+  //     return this.employee.About;
+  //   }
+  //   return this.employee.About.substring(0,30) + "...";
+  // }
 
   ngOnInit(): void {
   }
