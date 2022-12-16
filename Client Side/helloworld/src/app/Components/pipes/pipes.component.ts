@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PipesComponent implements OnInit {
 
+  employee = {
+    "name" : "John Mcmilan",
+    "BaseSalary" : 55000000,
+    "JoinedOn" : Date.now(),
+    "Qualification" : "BTech",
+    "About" : "John Wick, a retired hitman, is forced to return to his old ways after a group of Russian gangsters steal his car and kill a puppy gifted to him by his late wife.",
+    "WinningPercentage" : 35/100
+  }
+
   constructor() { }
 
   ngOnInit(): void {
