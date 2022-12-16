@@ -13,6 +13,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { AboutComponent } from './Components/about/about.component';
 import { ContactUsComponent } from './Components/contact-us/contact-us.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RegUsersComponent } from './Components/reg-users/reg-users.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     UserformComponent,
     NavbarComponent,
     AboutComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    RegUsersComponent
   ],
   imports: [
     BrowserModule,
