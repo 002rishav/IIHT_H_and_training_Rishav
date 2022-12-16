@@ -3,6 +3,7 @@ package com.library.Service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.library.Entity.Library;
@@ -16,9 +17,9 @@ public class LibraryServiceImpl implements ILibraryService {
 	private ILibraryRepo libraryRepo;
 
 	@Override
-	public Integer saveBook(Library library) {
-		Library savedBook = libraryRepo.save(library);
-		return savedBook.getId();
+	public Library saveBook(Library library) {
+		Library savedBook = libraryRepo.save(library); 
+		return savedBook;
 	}
 
 	@Override

@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.library.Entity.Library;
 import com.library.Service.ILibraryService;
 
-@CrossOrigin("http://localhost:4200/")
+@CrossOrigin(allowedHeaders = "*", origins = "*")
 @RestController
 public class LibraryController {
 
@@ -25,10 +25,9 @@ public class LibraryController {
 	private ILibraryService libraryService;
 
 	@PostMapping("/add/book")
-	Integer addBook(@RequestBody Library library) {
-		Integer id = libraryService.saveBook(library);
-		System.out.println(id);
-		return id;
+	Library addBook(@RequestBody Library library) {
+		Library book = libraryService.saveBook(library);
+		return book;
 	}
 	
 	@GetMapping("/allbooks")

@@ -2,11 +2,13 @@ package com.library.Service;
 
 import java.util.List;
 
+import org.springframework.http.ResponseEntity;
+
 import com.library.Entity.Library;
 
 public interface ILibraryService {
 
-	Integer saveBook(Library library);
+	Library saveBook(Library library);
 	
 	public List<Library> getAllBooks();
 	

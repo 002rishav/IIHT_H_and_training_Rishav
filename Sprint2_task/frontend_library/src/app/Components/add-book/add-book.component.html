@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="card mt-5" style="padding: 20px;">
+        <form class="form-group" #registerForm="ngForm" (ngSubmit)="register(registerForm)">
+          <div>
+            <label for="book_name">Book Name :</label>
+            <input type="text" #book_name (ngModel)="book_name" name="book_name" id="book_name" class="form-control" placeholder="Book Name">
+          </div>
+          <div class="form-group">
+            <label for="book_author">Book Author :</label>
+            <input type="text" #book_author (ngModel)="book_author" name="book_author" id="book_author" class="form-control"
+              placeholder="Book Author">
+          </div>
+          <div class="form-group">
+            <label for="book_price">Book Price :</label>
+            <input type="number" #book_price (ngModel)="book_price" name="percentage" id="book_price" class="form-control"
+              placeholder="Book Price">
+          </div>
+          <div class="form-group">
+            <label for="book_genre">Book Genre :</label>
+            <input type="text" #book_genre (ngModel)="book_genre" name="book_genre" id="book_genre" class="form-control"
+              placeholder="Book Genre">
+          </div>
+          <div class="form-group">
+            <label for="borrowed_status">Borrowed Status :</label>
+            <input type="boolean" #borrowed_status (ngModel)="borrowed_status" name="borrowed_status" id="borrowed_status" class="form-control"
+              placeholder="Borrowed Status">
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Add" class="btn btn-primary w-100">
+          </div>
+        </form>
+      </div>
+    
+</div>
