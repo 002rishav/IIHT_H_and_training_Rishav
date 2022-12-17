@@ -10,6 +10,7 @@ import { SearchBooksComponent } from './Components/search-books/search-books.com
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './Components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     NavbarComponent,
     SearchBooksComponent,
-    AddBookComponent
+    AddBookComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
