@@ -19,7 +19,7 @@ export class TodoComponentComponent implements OnInit {
     });
   }
 
-  removeTodo(index:number){
+  removeTodo(index: number) {
     this.store.dispatch(new TodoRemove(index));
   }
 
