@@ -10,10 +10,15 @@ const initialState:Todo [] =[
 ];
 
 
-export function TodoReducer(state = initialState, action:ActionParent) {
-    switch(action.type) {
+export function TodoReducer(state = initialState, action: ActionParent) {
+    switch (action.type) {
         case TodoActionType.Add:
-            return[...state,action.payload]
-            default:return state;
+            return [...state, action.payload];
+        case TodoActionType.Remove:
+            let newState = [...state];
+            newState.splice(action.payload, 1);
+            return newState;
+        default:
+            return state;
     }
 }
