@@ -12,7 +12,7 @@ export class AddBookComponent implements OnInit {
   constructor(private bookService: BookService) { }
 
   registerForm = new FormGroup({
-    book_name: new FormControl("", [Validators.required, Validators.pattern("^[a-zA-Z ]*$")]),
+    book_name: new FormControl("", [Validators.required, Validators.pattern("^[a-z0-9A-Z ]*$")]),
     book_author: new FormControl("",[Validators.required, Validators.pattern("^[a-zA-Z ]*$")]),
     book_price: new FormControl("", [Validators.required, Validators.pattern("^[0-9]+(\.[0-9]+)?$")]),
     book_genre: new FormControl("", [Validators.required, Validators.pattern("^[a-zA-Z ]*$")]),
@@ -41,9 +41,11 @@ export class AddBookComponent implements OnInit {
       (resp) => {
         console.log(resp);
         registerForm.reset();
+        alert("Book Saved Successfully");
       },
       (err) => {
         console.log(err);
+        alert("Book Not Saved");
       }
     );
   }
